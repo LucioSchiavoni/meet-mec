@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
-import equipoRouter from './routes/equipo.routes.js';
-import authRouter from './routes/auth.routes.js';
+
 import dotenv from 'dotenv';
+import meetRouter from './src/routes/meet.routes.js';
 dotenv.config();
 
 
@@ -20,8 +20,7 @@ const opcionesCors = {
 
 app.use(cors(opcionesCors));
 app.use(express.json());
-// app.use("/", authRouter)
-// app.use("/", equipoRouter)
+app.use("/", meetRouter)
 
 
 app.get("/", (req,res) => {

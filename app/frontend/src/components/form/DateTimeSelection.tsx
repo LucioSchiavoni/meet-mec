@@ -79,6 +79,7 @@ export default function DateTimeSelection({ onDateTimeChange }: DateTimeSelectio
                 selected={startDate}
                 onSelect={(date) => handleDateSelect(date, true)}
                 initialFocus
+                locale={es}
               />
             </PopoverContent>
           </Popover>
@@ -112,6 +113,7 @@ export default function DateTimeSelection({ onDateTimeChange }: DateTimeSelectio
                 selected={endDate}
                 onSelect={(date) => handleDateSelect(date, false)}
                 initialFocus
+                locale={es}
               />
             </PopoverContent>
           </Popover>
@@ -126,4 +128,3 @@ export default function DateTimeSelection({ onDateTimeChange }: DateTimeSelectio
     </div>
   )
 }
-

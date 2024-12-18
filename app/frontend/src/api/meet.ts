@@ -4,7 +4,7 @@ import clienteAxios from "../config/axios";
 
 export const getMeet = async () => {
     try {
-        const response = await clienteAxios.get('/meet');
+        const response = await clienteAxios.get('/get');
         return response.data;
     } catch (error) {
         console.log(error);
@@ -12,9 +12,9 @@ export const getMeet = async () => {
 }
 
 
-export const createMeet = async (meet: any) => {
+export const createMeet = async (data: any) => {
     try {
-        const response = await clienteAxios.post('/post/meet', meet);
+        const response = await clienteAxios.post('/post/meet', data);
         return response.data;       
     } catch (error) {
         console.log(error);

@@ -17,8 +17,9 @@ model Eventos {
   id Int @id @default(autoincrement())
   nombre_organizador String?
   nombre_evento String?
-  fecha_init DateTime
-  fecha_fin DateTime
+  fecha DateTime
+  hora_ini String
+  hora_fin String
   observacion String?
   email String?
 }

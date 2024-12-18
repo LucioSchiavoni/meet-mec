@@ -11,8 +11,8 @@ const AppContent = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/new/meet" element={<RegisterMeet />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/new" element={<RegisterMeet />} />
     </Routes>
   );
 };
